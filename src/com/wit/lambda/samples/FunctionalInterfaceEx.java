@@ -48,17 +48,20 @@ public class FunctionalInterfaceEx {
 
         /* ####  CUSTOM FUNCTIONAL INTERFACE EXAMPLES - STARTS */
 
-        //Lambda usage with a custom functional interface with no-argument method
+        //Lambda usage with a custom functional interface with no-argument method. Note: for custom functional
+        //interface, look at the bottom of this class.
         MyFunctionalInterfaceNoArg myFunctionalInterfaceNoArg =
                 () -> System.out.println("Lambda with custom & inbuilt functional interface.");
         myFunctionalInterfaceNoArg.printMessage();
 
-        //Lambda usage with a custom functional interface with a single-argument method
+        //Lambda usage with a custom functional interface with a single-argument method. Note: for custom functional
+        //interface, look at the bottom of this class.
         MyFunctionalInterfaceWithOneArg myFunctionalInterfaceWithOneArg = num -> (Integer) num % 2 == 0;
         int input = 16;
         System.out.println(input + " is an even number:" + myFunctionalInterfaceWithOneArg.isEvenNumber(input));
 
-        //Lambda usage with a custom functional interface with two-arguments method and with a return type.
+        //Lambda usage with a custom functional interface with two-arguments method and with a return type. Note: for custom functional
+        //interface, look at the bottom of this class.
         MyFunctionalInterface2Arg myFunctionalInterface2Arg = (a, b) -> (Double) a + (Double) b;
         System.out.println(myFunctionalInterface2Arg.calculate(5.5, 6.3));
 
